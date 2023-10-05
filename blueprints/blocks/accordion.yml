@@ -1,0 +1,38 @@
+name: field.blocks.accordion.name
+icon: menu
+fields:
+  
+  accordion:
+    label: field.blocks.accordion.nameentries
+    type: structure
+    sortable: true
+    columns:
+      summary:
+        width: 1/4
+      details:
+        width: 2/4
+      toggle:
+        label: field.blocks.accordion.open  
+        text: true
+    fields:
+      toggle:
+        label: field.blocks.accordion.openonload
+        type: toggle
+        width: 1/3
+      summary:
+        label: field.blocks.accordion.question
+        type: text
+        width: 2/3
+        placeholder: field.blocks.accordion.desc_question
+        required: true
+      details:
+        label: field.blocks.accordion.answer
+        type: textarea
+        placeholder: field.blocks.accordion.desc_answer
+        required: true
+    
+  schema:
+    label: field.blocks.accordion.showasfaq
+    type: toggle
+    default: true
+      

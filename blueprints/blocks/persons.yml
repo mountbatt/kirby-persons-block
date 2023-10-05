@@ -1,0 +1,14 @@
+name: field.blocks.persons.name
+icon: users
+preview: users
+fields:  
+  heading:
+    label: field.blocks.persons.section_headline
+    type: text
+  persons:
+    label: field.blocks.persons.name
+    type: pages
+    empty: field.blocks.persons.empty
+    query: kirby.page('persons').childrenanddrafts.index
+    
+      
